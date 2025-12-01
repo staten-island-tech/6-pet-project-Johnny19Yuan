@@ -11,7 +11,7 @@ class Pet:
 Fluffy = Pet("Fluffy", 0)
 play = True
 while play == True:
-    Fluffy.play(input("Fluffy"))
+    Fluffy.play(input(f"Play games: "))
     Fluffy.show_status(1)
 
 
