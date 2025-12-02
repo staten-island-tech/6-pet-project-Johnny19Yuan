@@ -7,4 +7,4 @@ class Teacher(User):
         base_info = super().display_info()
         return f"{base_info}, Subject: {self.subject}"
     
-User 
+teiacher = Teacher
