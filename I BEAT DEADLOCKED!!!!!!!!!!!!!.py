@@ -1,4 +1,4 @@
-class Teacher(User):
+class Teacher():
     def __init__(self, name, email, subject):
         super().__init__(name, email)
         self.subject = subject
@@ -7,4 +7,7 @@ class Teacher(User):
         base_info = super().display_info()
         return f"{base_info}, Subject: {self.subject}"
     
-teiacher = Teacher
+mr_walen = Teacher("mr_walen","mrwalen@geometrydash.com","com")
+
+print(Teacher.display_info)
+
