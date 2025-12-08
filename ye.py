@@ -10,7 +10,5 @@ class Teacher(walen):
         self.subject = subject
     
     def display_info(self):
-        info = super().display_info()
-        return (f"Subject: {self.subject}")
+        print(Teacher.display_info)
 mr_walen = Teacher("mr_Whalen","mrwalen@proton.me","com sci")
-print(Teacher.display_info)
