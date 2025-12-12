@@ -17,9 +17,14 @@ class Pet:
         print (f"{self.__name} is {self.__age} days old")
         print (f"{self.__name} is {self.__tired}% tired")
         print (f"{self.__name}'s heath is {self.__health}% ")
+    def action(self, do):
+        if do == "Play":
+            self.happy =+ int(10)
 
 petname = input("Name your pet: ")
 PET = Pet(f"{petname}","0","0","50","0","0","100")
-die = 0
-while die == 0:
+die = False
+while die == False:
     PET.show()
+    do = input("What do pet? ")
+    PET.action(do)
