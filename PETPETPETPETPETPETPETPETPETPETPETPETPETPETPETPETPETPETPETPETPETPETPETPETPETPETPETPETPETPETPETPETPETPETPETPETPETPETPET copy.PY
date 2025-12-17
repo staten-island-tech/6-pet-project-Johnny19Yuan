@@ -33,7 +33,7 @@ class Pet:
     def subtract(self):
         self.__happy -= 10
         self.__hungry +=10
-        self.__tired += 15
+        self.__tired += 20
 
 petname = input("Name your pet: ")
 PET = Pet(f"{petname}","50","50","0","0")
@@ -44,4 +44,3 @@ while died == False:
     do = input("What to do pet? ")
     PET.action(do)
     PET.subtract()
-    
