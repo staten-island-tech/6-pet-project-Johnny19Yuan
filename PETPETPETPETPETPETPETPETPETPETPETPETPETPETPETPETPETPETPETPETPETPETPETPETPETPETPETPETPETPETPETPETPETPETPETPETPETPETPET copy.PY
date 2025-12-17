@@ -16,18 +16,18 @@ class Pet:
         print (f"{self.__name} is {self.__age} days old")
     def action(self, do):
         if do == "Play":
-            self.__happy += 25
+            self.__happy += 50
             self.__age += 0.1
             print(f"{self.__name} is playing...")
             time.sleep(5)
         elif do == "Feed":
-            self.__hungry -= 25
+            self.__hungry -= 50
             self.__age += 0.1
             print(f"{self.__name} is eating...")
             time.sleep(5)
         elif do == "Sleep":
-            self.__tired = 0
-            self.__age += 0.5
+            self.__tired = -15
+            self.__age += 0.2
             print(f"{self.__name} is sleeping...")
             time.sleep(10)
     def subtract(self):
