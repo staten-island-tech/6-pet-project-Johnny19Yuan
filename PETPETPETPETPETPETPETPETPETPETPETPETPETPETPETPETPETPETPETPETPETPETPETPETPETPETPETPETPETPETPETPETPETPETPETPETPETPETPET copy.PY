@@ -30,6 +30,9 @@ class Pet:
             self.__age += 0.2
             print(f"{self.__name} is sleeping...")
             time.sleep(10)
+        elif do == "67":
+            print(f"{self.__name} is sleeping...")
+            time.sleep(10)
     def subtract(self):
         self.__happy -= 10
         self.__hungry +=10
@@ -44,3 +47,4 @@ while died == False:
     do = input("What to do pet? ")
     PET.action(do)
     PET.subtract()
+    
