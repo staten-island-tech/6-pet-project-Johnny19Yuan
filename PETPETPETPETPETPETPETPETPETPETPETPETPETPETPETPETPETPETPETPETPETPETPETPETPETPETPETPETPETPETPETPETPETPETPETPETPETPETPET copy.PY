@@ -14,7 +14,7 @@ class Pet:
             self.alive = False
             for i in range(6767):
                 print(f"{self.__name} died")
-            died
+            
         print(" ")
         print (f"{self.__name} is {self.__hungry} full")
         print (f"{self.__name} is {self.__happy} happy")
@@ -33,7 +33,7 @@ class Pet:
             print(f"{self.__name} is eating...")
             time.sleep(5)
         elif do == "Sleep":
-            self.__tired = -15
+            self.__tired = -20
             self.__age += 0.2
             print(f"{self.__name} is sleeping...")
             time.sleep(10)
